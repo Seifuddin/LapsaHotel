@@ -84,7 +84,7 @@ class HotelBookingApp:
         # Title
         title = tk.Label(
             root,
-            text="🏨 Hotel Booking Management System",
+            text="🏨Lapsa Hotel Booking Management System",
             font=("Segoe UI", 22, "bold"),
             bg="#2c3e50",
             fg="white",
@@ -435,9 +435,10 @@ class HotelBookingApp:
             logo_img = Paragraph("<b>HOTEL</b>", styles["Title"])
 
         hotel_info = Paragraph(
-            "<b>Grand Azure Hotel</b><br/>"
-            "123 Ocean Drive, Seaview City<br/>"
-            "Tel: +1 (555) 123-4567 · bookings@grandazure.example<br/>"
+            "<b>Lapsa Hotel</b><br/>"
+            "Kahawa Wendani, Nairobi Kenya<br/>"
+            "Tel: +25411108331 <br/>"
+            "Website: https://lapsa.vercel.app<br/>"
             f"Receipt Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}",
             styles["Normal"]
         )
@@ -535,7 +536,7 @@ class HotelBookingApp:
             styles["SmallGrey"]
         ))
         story.append(Spacer(1, 4))
-        story.append(Paragraph("Thank you for choosing Grand Azure Hotel. We wish you a pleasant stay!", styles["Normal"]))
+        story.append(Paragraph("Thank you for choosing Lapsa Hotel. We wish you a pleasant stay!", styles["Normal"]))
 
         # Build and save
         doc.build(story)
